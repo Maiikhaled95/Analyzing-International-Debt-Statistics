@@ -1,6 +1,6 @@
 # Datacamp SQL Projects
 
-Analyzing International Debt Statistics
+## Analyzing International Debt Statistics
 
 ## 1. The World Bank's international debt data
 <p>It's not that we humans only take debts to manage our necessities. A country may also take debt to manage its economy. For example, infrastructure spending is one costly ingredient required for a country's citizens to lead comfortable lives. <a href="https://www.worldbank.org">The World Bank</a> is the organization that provides debt to countries.</p>
@@ -12,12 +12,14 @@ Analyzing International Debt Statistics
 </ul>
 <p><img src="https://assets.datacamp.com/production/project_754/img/image.jpg" alt></p>
 <p>The first line of code connects us to the <code>international_debt</code> database where the table <code>international_debt</code> is residing. Let's first <code>SELECT</code> <em>all</em> of the columns from the <code>international_debt</code> table. Also, we'll limit the output to the first ten rows to keep the output clean.</p>
+
 %%sql
 postgresql:///international_debt
     SELECT *
     FROM international_debt
     LIMIT 10;
 %%sql
+
 ## 2. Finding the number of distinct countries
 <p>From the first ten rows, we can see the amount of debt owed by <em>Afghanistan</em> in the different debt indicators. But we do not know the number of different countries we have on the table. There are repetitions in the country names because a country is most likely to have debt in more than one debt indicator. </p>
 <p>Without a count of unique countries, we will not be able to perform our statistical analyses holistically. In this section, we are going to extract the number of unique countries present in the table. </p>
