@@ -14,7 +14,6 @@
 <p>The first line of code connects us to the <code>international_debt</code> database where the table <code>international_debt</code> is residing. Let's first <code>SELECT</code> <em>all</em> of the columns from the <code>international_debt</code> table. Also, we'll limit the output to the first ten rows to keep the output clean.</p>
 
 ```sql
-postgresql:///international_debt
     SELECT *
     FROM international_debt
     LIMIT 10;
