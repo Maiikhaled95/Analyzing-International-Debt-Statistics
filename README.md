@@ -1,1 +1,3 @@
-# SQL-Datacamp-Projects
+# Datacamp SQL Projects
+
+Analyzing International Debt Statistics
