@@ -13,12 +13,12 @@
 <p><img src="https://assets.datacamp.com/production/project_754/img/image.jpg" alt></p>
 <p>The first line of code connects us to the <code>international_debt</code> database where the table <code>international_debt</code> is residing. Let's first <code>SELECT</code> <em>all</em> of the columns from the <code>international_debt</code> table. Also, we'll limit the output to the first ten rows to keep the output clean.</p>
 
-%%sql
+```sql
 postgresql:///international_debt
     SELECT *
     FROM international_debt
     LIMIT 10;
-%%sql
+```
 
 ## 2. Finding the number of distinct countries
 <p>From the first ten rows, we can see the amount of debt owed by <em>Afghanistan</em> in the different debt indicators. But we do not know the number of different countries we have on the table. There are repetitions in the country names because a country is most likely to have debt in more than one debt indicator. </p>
